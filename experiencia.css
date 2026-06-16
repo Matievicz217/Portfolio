@@ -1,0 +1,126 @@
+.experiencia{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.experiencia .subtitulo{
+    color: #141414;
+    width: 3ch;
+}
+
+.experiencia-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: #141414;
+}
+
+.experiencia-texto strong{
+    color: #141414;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #141414;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.empresa-ano{
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    text-align: right;
+    width: 80px;
+    color: #525252;
+    font-size: 0.875rem;
+}
+
+.empresa::before{
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#ffff,#FF8000);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.empresa-titulo{
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #a3a3a3;
+}
+
+.empresa-texto{
+    font-size: 0.875rem;
+    line-height: 1.33;
+    color: #a3a3a3;
+    font-weight: bold;
+}
+
+.empresa-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.empresa-habilidades li{
+    font-size: 0.875rem;
+    line-height: 1.2;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 768px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .experiencia .subtitulo{
+        text-align: center;
+        color: #141414;
+        width: initial;
+    }
+
+    .experiencia-texto{
+        font-size: 1.3rem;
+    }
+
+    .empresa-ano{
+        position: initial;
+        order: 1;
+        text-align: left;
+        width: initial;
+        margin-bottom: 5px;
+    }
+
+    .empresa::before{
+        top: 50;
+        left: 10;
+    }
+}
+
+@media(max-width: 400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+    
+}
