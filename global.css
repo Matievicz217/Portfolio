@@ -21,6 +21,7 @@ ul{
 
 img{
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -38,4 +39,8 @@ img{
         text-transform: capitalize;
         max-width: initial;
     }
+}
+
+.header, .introducao, .experiencia, .formacao, .footer{
+    visibility: hidden;
 }

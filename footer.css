@@ -14,21 +14,23 @@
 }
 
 .footer-texto{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.33;
     color: #070707;
 }
 
 .footer-contato li{
     font-weight: bold;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     color: #070707;
     margin-bottom: 30px;
 }
 
 .footer-contato li a{
+    font-size: 1.5rem;
     color: #070707;
+    text-decoration: none;
 }
 
 .footer-copy{
@@ -37,6 +39,27 @@
     color: #070707;
     text-align: center;
 }
+.instagram-icon {
+    font-size: 32px;
+    text-decoration: none;
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin {
+    color: #0A66C2;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
 
 @media(max-width:800px){
     .footer-container{
@@ -46,5 +69,8 @@
 
     .footer-contato li{
         font-size: 1.5rem;
+    }
+    .footer-texto{
+        font-size: 1.25rem;
     }
 }

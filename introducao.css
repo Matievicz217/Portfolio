@@ -29,6 +29,7 @@
     animation: flutuar 4s ease-in-out infinite;
 }
 
+
 @keyframes flutuar {
   0% {
     transform: translateY(0);
