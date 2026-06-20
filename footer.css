@@ -42,14 +42,6 @@
 .instagram-icon {
     font-size: 32px;
     text-decoration: none;
-    background: linear-gradient(
-        45deg,
-        #f09433,
-        #e6683c,
-        #dc2743,
-        #cc2366,
-        #bc1888
-    );
 }
 
 .fa-linkedin {
