@@ -87,7 +87,4 @@
     .introducao{
         grid-column: 1fr;
     }
-    .introducao img{
-        display: none;
-    }
 }

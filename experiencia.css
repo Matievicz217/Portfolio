@@ -141,8 +141,8 @@
     }
 
     .empresa::before {
-        top: 50;
-        left: 10;
+        top: 50px;
+        left: 10px;
     }
 }
 
