@@ -68,7 +68,8 @@
     }
 
     .logo::before{
-        visibility: hidden;
+        background-color: #F58000;
+        height: 15px;
     }
 
     .header a {
@@ -87,8 +88,7 @@
     }
 
     .logo{
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        text-shadow: 2px 2px 4px black;
     }
 }
