@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desenvolvedor Front-end">
+    <meta name="description" content="Cassiano Matievicz — Desenvolvedor Front-end, portfólio de projetos web.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portifolio</title>
+    <title>Cassiano Matievicz — Portfólio</title>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="logo">Cassiano Matievicz</h1>
+        <p class="logo">Cassiano Matievicz</p>
         <nav>
             <ul class="header-menu">
                 <li><a href="#experiencia">Projetos</a></li>
@@ -25,130 +25,140 @@
         </nav>
     </header>
 
-    <main class="introducao">
-        <img class="foto-perfil" src="./img/perfil.jpeg" width="360" height="520" alt="Foto de Cassiano">
-        <div>
-            <h1>Desenvolvedor <br> <span class="web">Web</span></h1>
-            <p>Sou formado em Análise e Desenvolvimento de Sistemas (ADS) e estou aprofundando meus conhecimentos em
-                desenvolvimento Front-end. Tenho experiência com HTML, CSS e JavaScript, e estou em constante
-                aprendizado de novas tecnologias e boas práticas para criar interfaces modernas, responsivas e
-                intuitivas. Busco aprimorar minhas habilidades para desenvolver soluções que ofereçam uma ótima
-                experiência aos usuários e contribuam para projetos de qualidade.</p>
-        </div>
-    </main>
-
-    <section class="experiencia" id="experiencia" aria-label="Experiencia">
-        <h2 class="subtitulo">Projetos</h2>
-        <div>
-            <p class="experiencia-texto">Responsável por criar interfaces de usuário responsivas e interativas
-                utilizando <strong>HTMl</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
-
-            <div class="empresa">
-                <h3 class="empresa-titulo">Calculadora Web</h3>
-                <span class="empresa-titulo">Front-end</span>
-                <p class="empresa-texto">Aplicação de calculadora que permite realizar operações matemáticas básicas por
-                    meio de uma interface simples e intuitiva.
-                    O projeto foi desenvolvido para reforçar conceitos fundamentais do desenvolvimento front-end e
-                    organização de código em JavaScript.</p>
-                <ul class="empresa-habilidades">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <ul class="li-link">
-                    <li><a href="https://matievicz217.github.io/Calculadora/" target="_blank">Ver Projeto</a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="empresa">
-                <h3 class="empresa-titulo">Calculadora de Juros</h3>
-                <span class="empresa-titulo">Front-end</span>
-                <p class="empresa-texto">Aplicação front-end simples para cálculo de juros com base no valor devido e na
-                    quantidade de dias em atraso.
-                    O projeto possui interface moderna, validação de dados e cálculo automático.</p>
-                <ul class="empresa-habilidades">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <ul class="li-link">
-                    <li><a href="https://matievicz217.github.io/Calculadora-de-Juros/" target="_blank">Ver Projeto</a>
-                    </li>
-                </ul>
-            </div>
-
-
-        </div>
-    </section>
-
-    <section class="formacao" id="formacao" aria-label="formacao">
-        <div class="formacao-container">
-            <h2 class="subtitulo">Formação</h2>
-
+    <main>
+        <section class="introducao reveal">
+            <img class="foto-perfil" src="./img/perfil.jpeg" width="360" height="520" alt="Foto de Cassiano">
             <div>
-                <p class="formacao-texto">
-                    Tecnólogo em Análise e Desenvolvimento de Sistemas
-                    Formação voltada para análise, desenvolvimento e manutenção de sistemas, proporcionando
-                    conhecimentos em programação, banco de dados e boas práticas de desenvolvimento.
-                </p>
+                <h1>Desenvolvedor <br> <span class="web">Web</span></h1>
+                <p>Sou formado em Análise e Desenvolvimento de Sistemas (ADS) e estou aprofundando meus conhecimentos em
+                    desenvolvimento Front-end. Tenho experiência com HTML, CSS e JavaScript, e estou em constante
+                    aprendizado de novas tecnologias e boas práticas para criar interfaces modernas, responsivas e
+                    intuitivas. Busco aprimorar minhas habilidades para desenvolver soluções que ofereçam uma ótima
+                    experiência aos usuários e contribuam para projetos de qualidade.</p>
+            </div>
+        </section>
 
-                <ul class="faculdade-lista">
-                    <li class="faculdade">
-                        <span class="faculdade-tipo">Tecnólogo</span>
-                        <h3 class="faculdade-curso">Analise e Desenvolvimento de Sistemas</h3>
-                        <span class="faculdade-instituicao">Unopar</span>
-                    </li>
-                </ul>
-                <div class="formacao-extra">
-                    <div class="cursos">
-                        <h3>Cursos Intensivos</h3>
-                        <ul>
-                            <li>UX Design & UI Design <span>56h</span> </li>
-                            <li>Front-end <span>73h</span> </li>
+        <section class="experiencia reveal" id="experiencia" aria-label="Projetos">
+            <h2 class="subtitulo">Projetos</h2>
+            <div>
+                <p class="experiencia-texto">Responsável por criar interfaces de usuário responsivas e interativas
+                    utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
+
+                <div class="empresa">
+                    <div class="empresa-top">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="empresa-numero">01 /02</span>
+                    </div>
+                    <div class="empresa-corpo">
+                        <span class="empresa-titulo">Front-end</span>
+                        <h3 class="empresa-titulo">Calculadora Web</h3>
+                        <p class="empresa-texto">Aplicação de calculadora que permite realizar operações matemáticas
+                            básicas por meio de uma interface simples e intuitiva. O projeto foi desenvolvido para
+                            reforçar conceitos fundamentais do desenvolvimento front-end e organização de código em
+                            JavaScript.</p>
+                        <ul class="empresa-habilidades">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <ul class="li-link">
+                            <li><a href="https://matievicz217.github.io/Calculadora/" target="_blank" rel="noopener">Ver Projeto</a></li>
                         </ul>
                     </div>
+                </div>
 
-                    <div class="idiomas">
-                        <h3>Idiomas</h3>
-                        <ul>
-                            <li>Ingles <span>/ intermediario</span> </li>
-                            <li>Português <span>/ fluente</span> </li>
+                <div class="empresa">
+                    <div class="empresa-top">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="empresa-numero">02 /02</span>
+                    </div>
+                    <div class="empresa-corpo">
+                        <span class="empresa-titulo">Front-end</span>
+                        <h3 class="empresa-titulo">Calculadora de Juros</h3>
+                        <p class="empresa-texto">Aplicação front-end simples para cálculo de juros com base no valor
+                            devido e na quantidade de dias em atraso. O projeto possui interface moderna, validação
+                            de dados e cálculo automático.</p>
+                        <ul class="empresa-habilidades">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <ul class="li-link">
+                            <li><a href="https://matievicz217.github.io/Calculadora-de-Juros/" target="_blank" rel="noopener">Ver Projeto</a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="formacao reveal" id="formacao" aria-label="Formação">
+            <div class="formacao-container">
+                <h2 class="subtitulo">Formação</h2>
 
-    <footer class="footer" id="contato">
+                <div>
+                    <p class="formacao-texto">
+                        Tecnólogo em Análise e Desenvolvimento de Sistemas. Formação voltada para análise,
+                        desenvolvimento e manutenção de sistemas, proporcionando conhecimentos em programação,
+                        banco de dados e boas práticas de desenvolvimento.
+                    </p>
+
+                    <ul class="faculdade-lista">
+                        <li class="faculdade">
+                            <span class="faculdade-tipo">Tecnólogo</span>
+                            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="faculdade-instituicao">Unopar</span>
+                        </li>
+                    </ul>
+                    <div class="formacao-extra">
+                        <div class="cursos">
+                            <h3>Cursos Intensivos</h3>
+                            <ul>
+                                <li>UX Design & UI Design <span>56h</span></li>
+                                <li>Front-end <span>73h</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="idiomas">
+                            <h3>Idiomas</h3>
+                            <ul>
+                                <li>Inglês <span>/ intermediário</span></li>
+                                <li>Português <span>/ fluente</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer reveal" id="contato">
         <div class="footer-container">
             <p class="footer-texto">
                 Desenvolvedor em constante evolução, focado em criar interfaces modernas e funcionais.
             </p>
             <ul class="footer-contato">
-                <li>binhomatievicz@hotmail.com</li>
-                <li><a href="https://www.linkedin.com/in/cassiano-guilherme-matievicz-de-barros-a87a03247/"
-                        target="_blank">
-                        <i class="fa-brands fa-linkedin"></i> Linkedin
+                <li><a href="mailto:binhomatievicz@hotmail.com">
+                        <i class="fa-solid fa-envelope"></i> binhomatievicz@hotmail.com
                     </a></li>
-                <li>
-                    <a class="instagram-icon" href="https://www.instagram.com/cassiano_matievicz" target="_blank">
-                        <i class="fa-brands fa-instagram"></i> Instagram</a>
-                </li>
-                <li><a href="https://github.com/Matievicz217" target="_blank">
+                <li><a href="https://www.linkedin.com/in/cassiano-guilherme-matievicz-de-barros-a87a03247/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a></li>
+                <li><a href="https://www.instagram.com/cassiano_matievicz" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a></li>
+                <li><a href="https://github.com/Matievicz217" target="_blank" rel="noopener">
                         <i class="fa-brands fa-github"></i> GitHub
                     </a></li>
             </ul>
             <p class="footer-copy">© 2026 Matievicz</p>
         </div>
-
     </footer>
-</body>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
+</body>
 
 </html>

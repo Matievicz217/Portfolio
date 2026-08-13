@@ -1,46 +1,119 @@
-body{
-    font-family: sans-serif;
+
+:root {
+    --tinta: #121212;
+    --papel: #FAFAF7;
+    --papel-2: #F1EFEA;
+    --laranja: #FF7A1A;
+    --laranja-luz: #FFC79A;
+    --cinza: #6B6B6B;
+    --cinza-claro: #A8A8A8;
+
+    --display: 'Space Grotesk', sans-serif;
+    --corpo: 'Inter', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+
+    --raio: 10px;
+    --raio-g: 20px;
+    --easing: cubic-bezier(.22, 1, .36, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--corpo);
     margin: 0px;
-    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    background: var(--papel);
     background-attachment: fixed;
     min-height: 100vh;
-    color: #070707;
+    color: var(--tinta);
+    -webkit-font-smoothing: antialiased;
 }
 
-
-
-h1,h2,h3,p{ 
+h1, h2, h3, p {
     margin: 0px;
+    font-family: var(--display);
 }
 
-ul{
+p {
+    font-family: var(--corpo);
+}
+
+ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.subtitulo{
-    font-size: 8rem;
-    line-height: 1;
-    text-transform: uppercase;
-    word-break: break-all;
-    max-width: 4ch;
+a {
+    color: inherit;
 }
 
-@media (max-width: 768px){
-    .subtitulo{
-        font-size: 3rem;
-        text-transform: capitalize;
-        max-width: initial;
+:focus-visible {
+    outline: 2.5px solid var(--laranja);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+::selection {
+    background: var(--laranja);
+    color: var(--papel);
+}
+
+.subtitulo {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    line-height: 1;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    max-width: none;
+}
+
+
+.subtitulo::before {
+    content: '=';
+    color: var(--laranja);
+    margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+    .subtitulo {
+        text-align: center;
     }
 }
 
-.header, .introducao, .experiencia, .formacao, .footer{
-    visibility: hidden;
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+.reveal {
+    opacity: 1;
+    transform: none;
+    transition: opacity .8s var(--easing), transform .8s var(--easing);
+}
+
+.reveal.is-hidden {
+    opacity: 0;
+    transform: translateY(40px);
 }
