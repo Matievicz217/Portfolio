@@ -40,5 +40,13 @@ function scrollSuave(){
 
     function scrollSection(event){
         event.preventDefault();
+        const href = event.currentTarget.getAttribute('href');
+        const section = document.querySelector(href);
     }
+
+    links.forEach((link) => {
+        link.addEventListener('click', scrollSuave)
+    });
 }
+
+scrollSuave();
