@@ -34,3 +34,11 @@ if ('IntersectionObserver' in window && secoes.length && links.length) {
 
     secoes.forEach(secao => navIo.observe(secao));
 }
+
+function scrollSuave(){
+    const links = document.querySelectorAll('.header-menu a[href^="#"]');
+
+    function scrollSection(event){
+        event.preventDefault();
+    }
+}
