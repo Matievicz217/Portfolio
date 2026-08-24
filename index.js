@@ -1,4 +1,3 @@
-
 const revealEls = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window) {
@@ -16,42 +15,29 @@ if ('IntersectionObserver' in window) {
     revealEls.forEach(el => io.observe(el));
 }
 
+function scrollSuave() {
+  const links = document.querySelectorAll(
+    '.header-menu a[href^="#"], .header-menu a[href^="/"]'
+  );
 
-const secoes = document.querySelectorAll('main section[id], main[id]');
-const links = document.querySelectorAll('.header-menu a');
+  function scrollSection(event) {
+    const href = event.currentTarget.getAttribute('href');
 
-if ('IntersectionObserver' in window && secoes.length && links.length) {
-    const navIo = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.getAttribute('id');
-                links.forEach(link => {
-                    link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
-                });
-            }
-        });
-    }, { threshold: 0.5 });
+    if (!href.startsWith('#')) return;
 
-    secoes.forEach(secao => navIo.observe(secao));
-}
+    event.preventDefault();
 
-function scrollSuave(){
-    const links = document.querySelectorAll('.header-menu a[href^="#"]');
+    const section = document.querySelector(href);
 
-    function scrollSection(event){
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute('href');
-        const section = document.querySelector(href);
-
-        section.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start', 
-        })
-    }
-
-    links.forEach((link) => {
-        link.addEventListener('click', scrollSection)
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
     });
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', scrollSection);
+  });
 }
 
 scrollSuave();

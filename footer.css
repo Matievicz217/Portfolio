@@ -23,7 +23,7 @@
 .footer-contato {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 60px;
 }
 
 .footer-contato li {

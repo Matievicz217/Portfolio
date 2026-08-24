@@ -24,6 +24,7 @@
 body {
     font-family: var(--corpo);
     margin: 0px;
+    margin-top: 70px;
     background: var(--papel);
     background-attachment: fixed;
     min-height: 100vh;
@@ -93,7 +94,7 @@ a {
 
 @keyframes flutuar {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+    50% { transform: translateY(-30px); }
 }
 
 
