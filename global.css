@@ -118,3 +118,34 @@ a {
     opacity: 0;
     transform: translateY(40px);
 }
+
+.menu-btn {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .sandwich {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #222;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .menu.ativo {
+    display: flex;
+  }
+}
+
